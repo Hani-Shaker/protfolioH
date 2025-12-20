@@ -1,0 +1,29 @@
+.achievements{
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+}
+.progress{
+    background: linear-gradient(-90deg, #00FF66,#00d455,#00b046, #016c2c,#045b27);
+    background-color: var(--color3);
+}
+.progress .value-progress{
+    top: -30px;
+    right: -25px;
+    width: 50px;
+    height: 20px;
+    background-color: var(--color3);
+    color: #000;
+    box-shadow: 0 0 15px 0 #000 inset;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    
+}
+
+.services .service{
+    box-shadow: var(--shadow);
+}
+.service p{
+    color: var(--text-disable);
+}

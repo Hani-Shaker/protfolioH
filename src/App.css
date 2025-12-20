@@ -1,0 +1,14 @@
+body {
+  background: var(--bg-color);
+  /* background: linear-gradient(135deg, #000000 10%, #0a0a0a, #001f3f 20%, #0a0a0a 40%); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/micro-carbon.png"); */
+  background-blend-mode: overlay;
+  background-size: 400% 400%;
+  animation: blueShift 15s ease infinite;
+  color: var(--text-color);
+}
+@keyframes blueShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,19 @@
+#projects h2{
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+}
+.projects-cont .project{
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+}
+.top-product{
+    /* clip-path: polygon(0 0, 320px 0, 320px 220px, 160px 320px, 0 220px); */
+    background-color: var(--bg-color3);
+}
+.project-body p{
+    color: var(--text-disable);
+    font-weight: bold;
+}
+/* .project-img{
+
+} */
