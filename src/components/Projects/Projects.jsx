@@ -1,5 +1,5 @@
 import './Projects.css'
-// import shoes from '../../assets/images/logo-shoes.png'
+import { useState } from "react";
 function Projects() {
     const projects = [
     { id: "1", title: "furniture", urlImg: "../../../images/project1.png", repo:"", view:"https://furniture-us.netlify.app/", category: "website", body:"A website showcasing products related to home furnishings."},  
@@ -13,11 +13,16 @@ function Projects() {
     { id: "9", title: "Restaurant", urlImg: "../../../images/project9.png", repo:"", view:"https://darkl.netlify.app/", category: "website", body:"Fast food website."},
 
   ];
+  
+  const [visibleCount, setVisibleCount] = useState(3);
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + 3);
+  };
   return (
     <section id='projects'>
       <h2 className='font-bold text-4xl text-center h-40 flex items-center justify-center '>Projects</h2>
-      <div className="projects-cont w-8/10 h-dvh mx-auto mt-10 flex flex-wrap justify-center gap-15">
-          {projects.map((item) => (
+      <div className="projects-cont w-9/10 mx-auto py-20 flex flex-wrap justify-center gap-15">
+          {projects.slice(0, visibleCount).map((item) => (
           <div className="project w-80 transition hover:scale-105 rounded-4xl overflow-hidden flex justify-center flex-col" key={item.id}>
             <div className="top-product relative flex justify-center items-center overflow-hidden w-100 transform translate-x-[-10%]">
               <img src={item.urlImg} alt="img" className='project-img h-50'/>
@@ -28,12 +33,13 @@ function Projects() {
                 <p>{item.body}</p>
               </div>
               <div className="links flex justify-between h-1/12">
-                {item.repo && <a href={item.repo} target="_blank" rel="noopener noreferrer" className='size-10 bg-green-900 flex justify-center items-center rounded-3xl'><i className="fa-brands fa-github text-3xl"></i></a>}
-                {item.view && <a href={item.view} target="_blank" rel="noopener noreferrer" className='size-10 bg-green-900 flex justify-center items-center rounded-3xl'><i className="fa-solid fa-link text-3xl"></i></a>}
+                {item.repo && <a href={item.repo} target="_blank" rel="noopener noreferrer" className='size-10 flex justify-center items-center rounded-3xl'><i className="fa-brands fa-github text-3xl"></i></a>}
+                {item.view && <a href={item.view} target="_blank" rel="noopener noreferrer" className='size-10 flex justify-center items-center rounded-3xl'><i className="fa-solid fa-link text-3xl"></i></a>}
               </div>
-            </div>
+            </div> 
           </div>
           ))}
+          {visibleCount < projects.length && (<button onClick={handleLoadMore} className='cursor-pointer bg-[#19cee6] text-black p-3 rounded-2xl'>More...</button>)}
       </div>
     </section>
   )

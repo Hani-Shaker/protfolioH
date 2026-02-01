@@ -14,7 +14,7 @@
     color: var(--color3);
 }
 .hire-me{
-    border: 2px solid #00FF66;
+    border: 2px solid var(--color3);
     width: 120px;
     padding: 10px;
     cursor: pointer;
@@ -62,6 +62,24 @@
         transform: translateY(10px);
     }
 }
+.featured-projects h2{
+    max-width: 500px;
+    height: 70px;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow2);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 @media (max-width:795px){
     .home{
         height: fit-content;        

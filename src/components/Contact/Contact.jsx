@@ -25,11 +25,10 @@ const sendEmail = (e) => {
       );
     e.target.reset(); // يفضي الحقول بعد الإرسال
   };
-// alert(window.innerWidth + " x " + window.innerHeight);
   return (
     <section className="" id='contact'>
       <div className="contact-cont relative">
-        <h2 className='font-bold text-3xl absolute p-5 left-0 top-0 rounded-e-4xl'>Contact With Me</h2>
+        <h2 className='font-bold text-3xl p-5 rounded-e-4xl'>Contact With Me</h2>
         <div className="tools-contact">
           <div className="tool">
             <div className="icon"><i className='fas fa-phone'></i></div>

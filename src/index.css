@@ -1,41 +1,49 @@
 @import "tailwindcss";
-:root{
- --main-color: #0f172a;   
- /* --bg-color: #bbff00;    */
- --bg-color: #0A0A0A;   
- --bg-color3: #0C0910;   
- --bg-color2: rgba(12, 9, 16, 0.4);   
- --main-color: #3B82F6;
- --text-color: #F8FAFC;
- --text-disable: #6c757d;
- --color1:#0E5FA6;
- --color3:#00FF66;
- /* --color3:#3B82F6;
- --color3:#05BECD; */
- --linear-gradient: linear-gradient(135deg,#00ff6630, #0C0910 , #00ff661d ,#0C0910);
- --shadow: 2px 2px 10px 0 #00FF66;
- /* --shadow: 10px 10px 20px 0 #000; */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  /* --bg-color: #bbff00; */
+  --bg-color: #0a0a0a;
+  --text-color: #f8fafc;
+  --text-disable: #6c757d;
+  --color1: #0e5fa6;
+  --color3: #19cee6;
+  --gradient-card: linear-gradient(145deg, rgb(14, 21, 37), rgb(11, 17, 30));
+  --linear-gradient: linear-gradient(
+    135deg,
+    #00ff6630,
+    #0c0910,
+    #00ff661d,
+    #0c0910
+  );
+  --shadow2: 2px 2px 10px 0 rgba(25, 206, 230, 0.3);
+  --card: 222 47% 8%;
+  --card-foreground: 210 40% 98%;
+  --shadow: 10px 10px 20px 0 #000;
 }
-section{
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 80px;
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
 }
-h6,label{
+h6,
+label {
   color: var(--color3);
   display: inline;
   text-shadow: #04010a;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.gradient-animation{
-  background: var(--linear-gradient);
+/* .gradient-animation{
+  background: var(--gradient-card);
   background-size: 300% 300%;
   animation: gradient-animation 10s ease infinite;
-}
+} */
 
-@keyframes gradient-animation {
+/* @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -45,46 +53,4 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
-@keyframes viewer-to-left {
-    0%{
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-
-    }
-}
-@keyframes viewer-to-right {
-    0%{
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes viewer-to-top {
-    0%{
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-
-    }
-}
-@keyframes viewer-blur {
-    0%{
-        filter: blur(30px);
-        transform: scale(0.5);
-    }
-    100%{
-        transform: scale(1);
-        filter: blur(0);
-    }
-}
+} */

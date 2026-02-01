@@ -42,7 +42,7 @@
     height: 0;
     overflow: hidden;
     width: 100%;
-    background: var(--linear-gradient);       
+    background: var(--gradient-card);       
     background-size: 300% 300%;
     animation: gradient-animation 10s ease infinite;
     position: absolute;

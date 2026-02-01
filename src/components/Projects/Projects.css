@@ -3,17 +3,45 @@
     box-shadow: var(--shadow);
 }
 .projects-cont .project{
-    background-color: var(--bg-color);
+    background: var(--gradient-card);
+    /* background: var(--card); */
     box-shadow: var(--shadow);
+
 }
 .top-product{
-    /* clip-path: polygon(0 0, 320px 0, 320px 220px, 160px 320px, 0 220px); */
-    background-color: var(--bg-color3);
+    background-color: var(--gradient-card);
 }
 .project-body p{
     color: var(--text-disable);
     font-weight: bold;
+    min-height: 100px;
+    margin-bottom: 60px;
 }
-/* .project-img{
-
-} */
+.project-body .links{
+    width: 100%;
+    height: fit-content;
+}
+.project-body .links a{
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color);
+}
+.project-body .links a:last-child{
+    right: 0;
+}
+.project-body .links a::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color3);
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}

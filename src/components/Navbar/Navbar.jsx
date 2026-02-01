@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   const [smallNav, setSmallNav] = useState(false);
   const activeIcons = ({ isActive }) => ({
-    color: isActive ? "#00FF66" : "",
+    color: isActive ? "hsl(187 80% 50%)" : "",
   });
 
 
@@ -37,7 +37,7 @@ function Navbar() {
         </ul>
       </div>         
       <div className="btns flex justify-center items-center">
-        <button className="hover:text-black w-30 h-10 rounded-xl font-bold">Resume</button>
+        <button className="hover:text-black w-30 h-10 rounded-xl font-bold"> <a href="https://drive.google.com/file/d/19b4AEvxOKXq2do3ODTdSH8AURhUR8jQQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></button>
       </div>
     </nav>
   );
