@@ -5,7 +5,7 @@ import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Home from './components/Home/Home';
-import Test from './components/test/test';
+import Test from './components/Test/Test';
 import MainLayout from "./layouts/MainLayout";
 
 // import Navbar from "./components/Navbar/Navbar";
