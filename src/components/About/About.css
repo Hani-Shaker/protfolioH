@@ -21,5 +21,15 @@
 }
 .who-me .right-who-me span{
     color: var(--text-disable);
-    
+}
+
+@media (max-width:760px) {
+    .who-me {
+        flex-direction: column;
+        text-align: center;
+    }
+    .who-me .left-who-me,
+    .who-me .right-who-me {
+        width: 100%;
+    }
 }

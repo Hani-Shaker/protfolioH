@@ -1,9 +1,11 @@
+
 body {
   background: var(--bg-color);
   background-blend-mode: overlay;
   background-size: 400% 400%;
   animation: blueShift 15s ease infinite;
   color: var(--text-color);
+
 }
 @keyframes blueShift {
   0% { background-position: 0% 50%; }
