@@ -15,6 +15,7 @@ function Navbar() {
     { id: "projects", to:"/projects", label: "Projects" },
     { id: "skills", to:"/skills", label: "Skills" },
     { id: "contact", to:"/contact", label: "Contact" },
+    { id: "test", to:"/test", label: "Test" },
   ];
 
   const handleClickNav = () => {
